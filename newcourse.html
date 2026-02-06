@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Course - Mus’ab Arafah Portfolio</title>
+</head>
+
+<body>
+    <a href="./index.html">Home</a> |
+    <a href="./mycourses.html">My Courses</a> |
+    <a href="./newcourse.html">Add New Course</a> |
+    <h1>Add New Course</h1>
+    <form action="#" method="post">
+        <label for="course-name">Course Name:</label> <br />
+        <input type="text" id="course-name" name="course-name" required><br /><br />
+        <label for="course-price">Course Price:</label><br />
+        <input type="number" id="course-price" name="course-price" min="0" step="any" required><br /><br />
+        <label for="course-image">Course Image URL:</label><br />
+        <input type="url" id="course-image" name="course-image" required><br /><br />
+        <label for="course-type">Course Type:</label><br />
+        <select id="course-type" name="course-type" required>
+            <option value="online">Online</option>
+            <option value="in-person">In Person</option>
+        </select><br /><br />
+        <label>Instructor(s) (select multiple):</label><br />
+        <input type="checkbox" id="instructor1" name="instructors" value="Tariq Shreem">
+        <label for="instructor1">Tariq Shreem</label><br />
+        <input type="checkbox" id="instructor2" name="instructors" value="Jafar Shunnar">
+        <label for="instructor2">Jafar Shunnar</label><br />
+        <input type="checkbox" id="instructor3" name="instructors" value="Dr.Hussein In Tech">
+        <label for="instructor3">Dr.Hussein In Tech</label><br />
+        <input type="checkbox" id="instructor4" name="instructors" value="Rand Irany">
+        <label for="instructor4">Rand Irany</label><br /><br />
+        <input type="submit" value="Add Course">
+    </form>
+    <a href="./index.html">Back To Home</a>
+</body>
+
+</html>
